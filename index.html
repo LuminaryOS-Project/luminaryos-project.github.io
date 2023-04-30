@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>LuminaryOS - Java</title>
+        <link rel="stylesheet" href="css/Main.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter">
+        <script src="js/fadeBack.js"></script>
+        <script src="js/misc.js"></script>
+        <script src="js/bootstrap.bundle.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div class="alert alert-primary alert-dismissible" role="alert" id="devalt">
+                LuminaryOS is still in heavy development!
+            </div>
+            <h1>Welcome to <span class="lin">LuminaryOS</span></h1>
+            <div class="dropdown">
+                <button class="btn btn-primary"> About Us </button>
+                <div class="dropdown-content about-us">
+                    <p>LuminaryOS is an open-source project developed in Java that aims to provide a user-friendly, secure, and customizable operating system. It is actively maintained by a community of developers who are constantly adding new features, fixing bugs, and improving performance. IntelOS offers a variety of features, including a customizable user interface, support for multiple programming languages, and advanced security features like encryption and 256-bit hashing. Its open-source nature allows developers to contribute to the project and customize it to fit their specific needs.</p>
+                </div>
+            </div>
+            <button onclick="sendto('https://github.com/IntelOS/IntelOS-Java')" type="button" class="btn btn-primary" data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="The Latest Stable Version of IntelOS">Download Latest Version</button>
+            <div class="dropdown">
+                <button class="btn btn-primary">Downloads</button>
+                <div class="dropdown-content">
+                    <a class="btn btn-outline-success" href="https://github.com/IntelOS/IntelOS-Java">Download Latest Build</a>
+                    <a class="btn btn-outline-warning" href="https://github.com/IntelOS/IntelOS-Java">Download Legacy Build</a>
+                    <a class="btn btn-outline-danger" href="https://github.com/IntelOS/IntelOS-Java">Download Dev Build</a>
+                </div>
+            </div>
+           <label class="switch">
+              <input type="checkbox" id="fcolor">
+              <span class="slider round"></span>
+              <span class="on">Cursor Colorization</span>
+            </label>
+            <canvas id="mousetracer"></canvas>
+        <script src="js/mouseDraw.js"></script>
+        </div>
+    </body>
+</html>
